@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <p>WeatherMe</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li> <strong>Today</strong></li>
+                    <li>Tommorow</li>
+                    <li>Monthly Forecast</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="search">
+                    <form action="">
+                    <input id="city" type="search" placeholder="Enter city name">
+                    <i class="fa fa-search" id="submit"></i>
+                    </form>
+                </div>
+                <div class="res">
+                    <div class="res1 res-style">
+                        <div class="citi">
+                            <p id="cityName"></p>
+                            <img src="/icons/location.png" alt="" style="width: 31px; height: 31px;">
+                        </div>
+                        <div class="tempr">
+                            <img src="/icons/temperature.png" alt="" style="width: 18px; height: 62px; margin-bottom:28px;">
+                            <p><p id="temp"></p>
+                            <img src="/icons/sunny.png" alt="" style="width:90px; height:70px;">
+                        </div>
+                        <div class="humi">
+                            <div class="flex-c">
+                                <p>humidity</p>
+                                <span><span id="humidity"></span>%</span>
+                            </div>
+                            <div class="flex-c">
+                                <p>max temperature</p>
+                                <span><span id="max_temp"></span>&#8451</span>
+                            </div>
+                            <div class="flex-c">
+                                <p>min temperature</p>
+                                <span><span id="min_temp"></span>&#8451</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="res2 res-style flex-c">
+                        <div id="r2">
+                            <div class="day flex-c">
+                                <img src="/icons/day.png" alt="" style="height: 180px; width: 180px;">
+                                <span id="sunrise"></span>
+                            </div>
+                            <div class="night flex-c">
+                                <img src="/icons/night.png" alt="" style="height: 180px; width: 180px;">
+                                <span id="sunset"></span>
+                            </div>
+                        </div>
+                            <div class="wind">
+                            <p>wind speed</p>
+                            <span><span id="wind_speed"></span> km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
